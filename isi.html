@@ -67,7 +67,7 @@
 
         // Fungsi Beli Sekarang (Redirect ke WhatsApp)
         document.getElementById('buy-now').addEventListener('click', function () {
-            let phoneNumber = "088802377919"; // Ganti dengan nomor WhatsApp yang benar
+            let phoneNumber = "+6288802377919"; // Ganti dengan nomor WhatsApp yang benar
             let message = `Halo, saya ingin membeli ${name} dengan harga ${price}. Bisa beri info lebih lanjut?`;
             let whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
             window.open(whatsappUrl, "_blank");
